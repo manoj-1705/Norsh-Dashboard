@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Norsh Juicery – November 2026 Field Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Norsh Juicery: November 2026 live field plan</h1>
+  <p class="sub">Reads your Google Sheet. Edit the sheet and this page updates automatically.</p>
+
+  <div class="bar">
+    <span><span class="dot" id="dot"></span><span id="when">Connecting to Google Sheets…</span></span>
+    <button id="refresh" type="button">Refresh now</button>
+    <a class="btn" id="open" target="_blank" rel="noopener">Open the sheet</a>
+  </div>
+  <div id="msg" role="status"></div>
+
+  <h2>This month in numbers</h2>
+  <div class="stats" id="stats"><div class="empty">Loading summary…</div></div>
+
+  <h2>Daily schedule</h2>
+  <div class="legend">
+    <span><i style="background:var(--leaf)"></i>Doddaballapur</span>
+    <span><i style="background:var(--sky)"></i>Devanahalli</span>
+    <span><i style="background:var(--citrus)"></i>Yelahanka</span>
+    <span><i style="background:var(--rose)"></i>Revisit, quotes, review</span>
+  </div>
+  <div class="scroll" id="plan"><div class="empty">Loading schedule…</div></div>
+
+  <h2>Prospect list</h2>
+  <div class="chips" id="zones"></div>
+  <input type="search" id="q" placeholder="Search name or address" aria-label="Search prospects">
+  <div class="scroll" id="leads"><div class="empty">Loading prospects…</div></div>
+
+  <h2>Visits and follow-ups</h2>
+  <div class="pipe" id="pipe"></div>
+  <div class="cols">
+    <div class="card"><h3>Latest visits</h3><div class="scroll" id="visits"><div class="empty">Loading…</div></div></div>
+    <div class="card"><h3>Follow-ups</h3><div class="scroll" id="fus"><div class="empty">Loading…</div></div></div>
+  </div>
+
+  <h2>Daily rules and weekly review</h2>
+  <div class="cols">
+    <div class="card"><h3>Every day</h3><ul>
+      <li>Before leaving: confirm the route, check map pins, call priority prospects, carry approved catalogue and samples</li>
+      <li>At each business: get the decision-maker’s contact, requirement, quantity and buying frequency</li>
+      <li>After each visit: update the visit log and follow-up tracker the same day, with a real follow-up date</li>
+    </ul></div>
+    <div class="card"><h3>Weekly review</h3><ul id="check"><li>Loading…</li></ul></div>
+  </div>
+  <div class="rule">Do not promise prices, margins, delivery timing, shelf life or credit terms until Norsh Juicery approves them. Targets are planning estimates.</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
